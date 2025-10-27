@@ -111,7 +111,8 @@
       <Message>copy "$(TargetPath)" "$(SolutionDir)ElGato\bin\Debug\net8.0-windows\"</Message>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)El_Gato\bin\$(Configuration)\net8.0-windows\"</Command>
+      <Command>if not exist "$(SolutionDir)El_Gato\bin\$(Configuration)\net8.0-windows\" mkdir "$(SolutionDir)El_Gato\bin\$(Configuration)\net8.0-windows\"
+if exist "$(TargetPath)" xcopy /Y /R "$(TargetPath)" "$(SolutionDir)El_Gato\bin\$(Configuration)\net8.0-windows\"</Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
