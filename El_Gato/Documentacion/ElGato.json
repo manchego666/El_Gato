@@ -1,0 +1,360 @@
+{
+  "Clases": [
+    {
+      "Nombre": "JugadorBase",
+      "EspacioDeNombres": "El_Gato.CapaDatos.Entidades.Plantillas",
+      "Atributos": [
+        "Nombre",
+        "Simbolo",
+        "Puntos"
+      ],
+      "Metodos": [
+        "Jugar"
+      ],
+      "Posicion": {
+        "IsEmpty": false,
+        "X": 759,
+        "Y": 93
+      },
+      "Tamano": {
+        "IsEmpty": false,
+        "Width": 140,
+        "Height": 212
+      },
+      "ColorFondoHex": "#FF0080",
+      "ColorBordeHex": "#FFFF80",
+      "Area": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 759,
+          "Y": 93
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 140,
+          "Height": 212
+        },
+        "X": 759,
+        "Y": 93,
+        "Width": 140,
+        "Height": 212,
+        "Left": 759,
+        "Top": 93,
+        "Right": 899,
+        "Bottom": 305,
+        "IsEmpty": false
+      }
+    },
+    {
+      "Nombre": "Bot : JugadorBase",
+      "EspacioDeNombres": "namespace El_Gato.CapaDatos.Entidades",
+      "Atributos": [],
+      "Metodos": [],
+      "Posicion": {
+        "IsEmpty": false,
+        "X": 911,
+        "Y": 366
+      },
+      "Tamano": {
+        "IsEmpty": false,
+        "Width": 140,
+        "Height": 140
+      },
+      "ColorFondoHex": "#80FFFF",
+      "ColorBordeHex": "Red",
+      "Area": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 911,
+          "Y": 366
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 140,
+          "Height": 140
+        },
+        "X": 911,
+        "Y": 366,
+        "Width": 140,
+        "Height": 140,
+        "Left": 911,
+        "Top": 366,
+        "Right": 1051,
+        "Bottom": 506,
+        "IsEmpty": false
+      }
+    },
+    {
+      "Nombre": "Jugador : JugadorBase",
+      "EspacioDeNombres": "CapaDatos.Entidades",
+      "Atributos": [],
+      "Metodos": [],
+      "Posicion": {
+        "IsEmpty": false,
+        "X": 617,
+        "Y": 361
+      },
+      "Tamano": {
+        "IsEmpty": false,
+        "Width": 140,
+        "Height": 140
+      },
+      "ColorFondoHex": "Aqua",
+      "ColorBordeHex": "Yellow",
+      "Area": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 617,
+          "Y": 361
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 140,
+          "Height": 140
+        },
+        "X": 617,
+        "Y": 361,
+        "Width": 140,
+        "Height": 140,
+        "Left": 617,
+        "Top": 361,
+        "Right": 757,
+        "Bottom": 501,
+        "IsEmpty": false
+      }
+    },
+    {
+      "Nombre": "Juego",
+      "EspacioDeNombres": "CapaLogica",
+      "Atributos": [
+        "Jugador1",
+        "Jugador2"
+      ],
+      "Metodos": [
+        "CambiarTurno",
+        "JugarTurno",
+        "HayGanador",
+        "Empate"
+      ],
+      "Posicion": {
+        "IsEmpty": false,
+        "X": 761,
+        "Y": 513
+      },
+      "Tamano": {
+        "IsEmpty": false,
+        "Width": 140,
+        "Height": 248
+      },
+      "ColorFondoHex": "White",
+      "ColorBordeHex": "Black",
+      "Area": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 761,
+          "Y": 513
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 140,
+          "Height": 248
+        },
+        "X": 761,
+        "Y": 513,
+        "Width": 140,
+        "Height": 248,
+        "Left": 761,
+        "Top": 513,
+        "Right": 901,
+        "Bottom": 761,
+        "IsEmpty": false
+      }
+    },
+    {
+      "Nombre": "Tablero",
+      "EspacioDeNombres": "CapaLogica",
+      "Atributos": [
+        "Casillas"
+      ],
+      "Metodos": [
+        "Reiniciar",
+        "EstaVacia",
+        "Colocar"
+      ],
+      "Posicion": {
+        "IsEmpty": false,
+        "X": 760,
+        "Y": 793
+      },
+      "Tamano": {
+        "IsEmpty": false,
+        "Width": 140,
+        "Height": 212
+      },
+      "ColorFondoHex": "White",
+      "ColorBordeHex": "Black",
+      "Area": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 760,
+          "Y": 793
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 140,
+          "Height": 212
+        },
+        "X": 760,
+        "Y": 793,
+        "Width": 140,
+        "Height": 212,
+        "Left": 760,
+        "Top": 793,
+        "Right": 900,
+        "Bottom": 1005,
+        "IsEmpty": false
+      }
+    },
+    {
+      "Nombre": "frmInicio",
+      "EspacioDeNombres": "CapaVisual",
+      "Atributos": [
+        "SoundPlayer"
+      ],
+      "Metodos": [
+        "btnJugarCPP",
+        "btnJugarBot",
+        "btnJugarOnline",
+        "btnSource",
+        "btnSalir"
+      ],
+      "Posicion": {
+        "IsEmpty": false,
+        "X": 513,
+        "Y": 1054
+      },
+      "Tamano": {
+        "IsEmpty": false,
+        "Width": 140,
+        "Height": 248
+      },
+      "ColorFondoHex": "White",
+      "ColorBordeHex": "Black",
+      "Area": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 513,
+          "Y": 1054
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 140,
+          "Height": 248
+        },
+        "X": 513,
+        "Y": 1054,
+        "Width": 140,
+        "Height": 248,
+        "Left": 513,
+        "Top": 1054,
+        "Right": 653,
+        "Bottom": 1302,
+        "IsEmpty": false
+      }
+    },
+    {
+      "Nombre": "frmJugar",
+      "EspacioDeNombres": "CapaVisual",
+      "Atributos": [
+        "Juego",
+        "Jugador",
+        "Bot",
+        "TiempoRestante"
+      ],
+      "Metodos": [
+        "frmJugar_Load",
+        "btnSalir",
+        "timerTurno",
+        "iniciarturno",
+        "BuscarPrimeraLibre",
+        "CasillaClick",
+        "JuegaBot",
+        "VerificarFin",
+        "ReiniciarTablero",
+        "ActualizarMarcadores"
+      ],
+      "Posicion": {
+        "IsEmpty": false,
+        "X": 1044,
+        "Y": 918
+      },
+      "Tamano": {
+        "IsEmpty": false,
+        "Width": 140,
+        "Height": 392
+      },
+      "ColorFondoHex": "White",
+      "ColorBordeHex": "Black",
+      "Area": {
+        "Location": {
+          "IsEmpty": false,
+          "X": 1044,
+          "Y": 918
+        },
+        "Size": {
+          "IsEmpty": false,
+          "Width": 140,
+          "Height": 392
+        },
+        "X": 1044,
+        "Y": 918,
+        "Width": 140,
+        "Height": 392,
+        "Left": 1044,
+        "Top": 918,
+        "Right": 1184,
+        "Bottom": 1310,
+        "IsEmpty": false
+      }
+    }
+  ],
+  "Relaciones": [
+    {
+      "Origen": "JugadorBase",
+      "Destino": "Bot : JugadorBase",
+      "Tipo": 0
+    },
+    {
+      "Origen": "JugadorBase",
+      "Destino": "Jugador : JugadorBase",
+      "Tipo": 0
+    },
+    {
+      "Origen": "Jugador : JugadorBase",
+      "Destino": "Juego",
+      "Tipo": 0
+    },
+    {
+      "Origen": "Bot : JugadorBase",
+      "Destino": "Juego",
+      "Tipo": 0
+    },
+    {
+      "Origen": "Juego",
+      "Destino": "Tablero",
+      "Tipo": 0
+    },
+    {
+      "Origen": "Tablero",
+      "Destino": "frmInicio",
+      "Tipo": 0
+    },
+    {
+      "Origen": "Tablero",
+      "Destino": "frmJugar",
+      "Tipo": 0
+    }
+  ],
+  "Actores": [],
+  "Usos": []
+}
