@@ -16,8 +16,9 @@ El proyecto está diseñado para ser reproducible y fácil de compilar en cualqu
 ---
 
 ## 🖼️ Capturas
-![Partida](Imagenes/partida1.png)
-![Interfaz](Imagenes/interfaz.png)
+![Partida](Imagenes/VSBOT.png)
+![Interfaz](Imagenes/Inicio.png)
+![Consola C++](Imagenes/ConsolaCPP.png)
 
 ---
 
