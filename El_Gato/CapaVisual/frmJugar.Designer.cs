@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmJugar));
             tlpGato = new TableLayoutPanel();
             btn22 = new Button();
             btn21 = new Button();
@@ -240,8 +241,9 @@
             Controls.Add(lblBot);
             Controls.Add(lblJugador);
             Controls.Add(tlpGato);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmJugar";
-            Text = "frmJugar";
+            Text = "EL GATO VS BOT";
             Load += frmJugar_Load;
             tlpGato.ResumeLayout(false);
             ResumeLayout(false);

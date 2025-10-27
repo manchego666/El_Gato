@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInicio));
             pictureBox1 = new PictureBox();
             btnJugarCPP = new Button();
             btnJugarBot = new Button();
@@ -121,8 +122,9 @@
             Controls.Add(btnJugarBot);
             Controls.Add(btnJugarCPP);
             Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmInicio";
-            Text = "Form1";
+            Text = "EL GATO";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
