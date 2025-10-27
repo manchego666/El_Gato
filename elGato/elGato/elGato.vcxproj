@@ -110,6 +110,9 @@
     <PostBuildEvent>
       <Message>copy "$(TargetPath)" "$(SolutionDir)ElGato\bin\Debug\net8.0-windows\"</Message>
     </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>copy "$(TargetPath)" "$(SolutionDir)El_Gato\bin\$(Configuration)\net8.0-windows\"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>

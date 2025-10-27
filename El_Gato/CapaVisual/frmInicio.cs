@@ -58,7 +58,20 @@ namespace El_Gato
 
         private void btnSource_Click(object sender, EventArgs e) // Botón para abrir el repositorio de GitHub
         {
-            System.Diagnostics.Process.Start("https://github.com/manchego666");
+            try
+            {
+                var psi = new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = "https://github.com/manchego666/El_Gato",
+                    UseShellExecute = true   // <- Usar Navegador por defecto
+                };
+                System.Diagnostics.Process.Start(psi);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("No se pudo abrir el repositorio: " + ex.Message);
+            }
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e) // Botón para salir de la aplicación
